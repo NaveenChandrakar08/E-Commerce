@@ -1,0 +1,318 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    border: border-box;
+}
+nav{
+    background-color: #111;
+}
+.navtop{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#logo{
+   font-size: 35px;
+   color: aquamarine;
+   margin-left: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgb(164, 157, 157);
+    border-radius: 5px;
+}
+.SearchInput{
+    width: 700px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: rgb(80, 76, 76);
+}
+#SearchButton{
+    height:26px ;
+    background-color: transparent;
+    border: none;
+}
+#searchicon{
+    font-size: 18px;
+}
+.Limitedoffer{
+    margin-right: 50px;
+    font-size: 26px;
+    color: orange;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.navbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.MenuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+.MenuItem:hover{
+    color: orange;
+}
+.slider{
+    color: white;
+   background-color: #571313;
+    overflow: hidden;
+    /* clip-path: polygon(0 0, 100% 0%, 86% 100%, 0% 100%); */
+    clip-path: polygon(50% 0%, 100% 0, 100% 81%, 0 95%, 0 0);
+    
+}
+.sliderwrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 2s ease-in-out ;
+}
+.slideritem{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.slidertitle{
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: end;
+    color: rgb(212, 110, 37);
+    z-index: 1;
+}
+.sliderprice{
+   
+    color: black;
+    width: 180px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid orange;
+    position: absolute;
+    left: 145px;
+    top: 180px ;
+    font-size: 30px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slideBg{
+    width: 850px;
+    height: 850px;
+    border: 15px solid orange;
+    border-top: 15px solid black;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    animation: Roler 5s ease-in-out 0s infinite normal;
+}
+@keyframes Roler {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.BuyButton{
+    position: absolute;
+    right: 50px;
+    bottom: 260px;
+    width: 150px;
+    height: 100px;
+    font-size: 30px;
+    background-color: orange;
+    cursor: pointer;
+    font-weight: 900;
+    z-index: 1;
+}
+.BuyButton:hover{
+    background-color: black;
+    color: orange;
+}
+.slideritem:nth-child(1) .slideBg{
+    background-color: rgb(104, 15, 237);
+}
+.slideritem:nth-child(2) .slideBg{
+    background-color: rgb(18, 202, 79);
+}
+.slideritem:nth-child(3) .slideBg{
+    background-color: rgb(24, 145, 231);
+}
+.slideritem:nth-child(4) .slideBg{
+    background-color: rgb(100, 9, 80);
+}
+.slideritem:nth-child(5) .slideBg{
+    background-color: rgb(194, 18, 147);
+}
+.sliderImg{
+    max-height: 100%;
+	max-width: 100%;
+	width:800px;
+	height:800px;
+	background-size: cover;
+	float: left;
+    mix-blend-mode: multiply ;
+    z-index: 1;           
+}
+.sliderImgrect{
+    max-height: 100%;
+	max-width: 100%;
+	width:600px;
+	height:300px;
+	background-size: cover;
+	float: left;
+    mix-blend-mode: multiply ;
+    z-index: 1; 
+}
+.sliderImgover{
+    max-height: 100%;
+	max-width: 100%;
+	width:800px;
+	height:900px;
+	background-size: cover;
+	float: left;
+    mix-blend-mode: multiply ;
+    z-index: 1; 
+}
+.slideritem:nth-child(1) .sliderprice{
+    color: rgb(104, 15, 237);
+}
+.slideritem:nth-child(2) .sliderprice{
+    color: rgb(18, 202, 79);
+}
+.slideritem:nth-child(3) .sliderprice{
+    color: rgb(24, 145, 231);
+}
+.slideritem:nth-child(4) .sliderprice{
+    color: rgb(234, 98, 205);
+}
+.slideritem:nth-child(5) .sliderprice{
+    color: rgb(194, 18, 147);
+}
+.features{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.feature{
+    width: 150px;
+    text-align: center;
+}
+#FeatureImg{
+    color: brown;
+    font-size: 30px;
+}
+#FeatureImg2{
+    color: red;
+    font-size: 30px;
+}
+#FeatureImg3{
+    color: rgb(224, 115, 133);
+    font-size: 30px;
+}
+#FeatureImg4{
+    color: blue;
+    font-size: 30px;
+}
+.FeatureTitle{
+    font-weight: 800;
+}
+.payment{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    background-color: beige;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: -1px -5px 9px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px -5px 9px -1px rgba(0,0,0,1);
+    -moz-box-shadow: -1px -5px 9px -1px rgba(0,0,0,1);
+}
+.Paytitle{
+    font-size: 30px;
+    font-weight: 800;
+    color: #872424;
+}
+label{
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgb(95, 10, 10);
+}
+.Payname{
+    width: 360px;
+    height: 25px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid brown;
+    background-color: transparent;
+    color: rgb(79, 78, 78);
+}
+.Payname::placeholder{
+    color:rgb(164, 157, 157) ;
+}
+.Cardicons{
+    font-size: 20px;
+}
+.payinput{
+    height: 20px;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.payerinfo{
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid brown;
+    margin-bottom: 15px;
+}
+.paybutton{
+    background-color: orange;
+    color: purple;
+    font-weight: 800;
+    font-size: 15px;
+}
+.paybutton:hover{
+    background-color: purple;
+    color: orange;
+}
+.close{
+    background-color: red;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: 2px solid rgb(32, 21, 21);
+}

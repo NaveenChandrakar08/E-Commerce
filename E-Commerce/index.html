@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="navtop">
+            <div class="navItem">
+                <i class="fa-solid fa-glasses" id="logo"></i>
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search" class="SearchInput">
+                    <button id="SearchButton"><i class="fa-solid fa-magnifying-glass" id="searchicon"></i></button>
+                </div>
+            </div>
+            <div class="navItem">
+                <div class="Limitedoffer"> Limited Offer!</div>
+            </div>
+        </div>
+        <div class="navbottom">
+            <h3 class="MenuItem">AVIATORS</h3>
+            <h3 class="MenuItem">ROUND SHAPED</h3>
+            <h3 class="MenuItem">RECTANGE SUNGLASSES</h3>
+            <h3 class="MenuItem">OVERSIZED</h3>
+            <h3 class="MenuItem">CAT-EYE</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderwrapper">
+            <div class="slideritem">
+                <img src="/aviator.png" class="sliderImg">
+                <div class="slideBg"></div>
+                <h1 class="slidertitle">AVIATORS <br> TRENDING NOW!<br> &#128525</h1>
+                <h1 class="sliderprice">4000rs</h1>
+                <button class="BuyButton">BUY NOW!</button>
+            </div>
+            <div class="slideritem">
+                <img src="/round.png" class="sliderImg">
+                <div class="slideBg"></div>
+                <h1 class="slidertitle">ROUND SHAPED <br> TRENDING! &#129299</h1>
+                <h1 class="sliderprice">1500rs</h1>
+                <button class="BuyButton">BUY NOW!</button>
+            </div>
+            <div class="slideritem">
+                <img src="/rectangle.png" class="sliderImgrect">
+                <div class="slideBg"></div>
+                <h1 class="slidertitle">RECTANGLE SHAPED <br> TRENDING! &#128151</h1>
+                <h1 class="sliderprice">2300rs</h1>
+                <button class="BuyButton">BUY NOW!</button>
+            </div>
+            <div class="slideritem">
+                <img src="/oversized.png" class="sliderImgover">
+                <div class="slideBg"></div>
+                <h1 class="slidertitle">OVERSIZED <br> TRENDING!  &#128525</h1>
+                <h1 class="sliderprice">2700rs</h1>
+                <button class="BuyButton">BUY NOW!</button>
+            </div>
+            <div class="slideritem">
+                <img src="/file.png" class="sliderImg">
+                <div class="slideBg"></div>
+                <h1 class="slidertitle">CAT-EYE <br> TRENDING! &#128049  </h1>
+                <h1 class="sliderprice">3200rs</h1>
+                <button class="BuyButton">BUY NOW!</button>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <i class="fa-solid fa-truck" id="FeatureImg"></i><br>
+            <span class="FeatureTitle">FREE SHIPPING </span><br>
+            <span class="FeatureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-arrow-rotate-left" id="FeatureImg2"></i><br>
+            <span class="FeatureTitle">30 DAYS RETURN </span><br>
+            <span class="FeatureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-gift" id="FeatureImg3"></i><br>
+            <span class="FeatureTitle">GIFT CARDS </span><br>
+            <span class="FeatureDesc">Buy Gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature" >
+            <i class="fa-solid fa-phone-volume" id="FeatureImg4" ></i><br>
+            <span class="FeatureTitle">CONTACT US! </span><br>
+            <span class="FeatureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+    <div class="payment">
+        <h1 class="Paytitle">PERSONAl INFORMATION</h1>
+        <label>FULL NAME</label>
+        <input type="text" placeholder="Type your Name" class="Payname">
+        <label>Phone Number</label>
+        <input type="text" placeholder="1-234-567-89" class="Payname">
+        <label>Address</label>
+        <input type="text" placeholder="56/B,Gurgaon,Delhi" class="Payname">
+        <h1 class="Paytitle">CARD INFORMATION</h1>
+            <div class="Cardicons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-solid fa-credit-card"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+                <i class="fa-brands fa-cc-amazon-pay"></i>
+            </div>
+            <input type="password" class="payinput" placeholder="ACCOUNT NUMBER">
+            <div class="cardinfo">
+                <input type="text" class="payerinfo" placeholder="mm">
+                <input type="text" class="payerinfo" placeholder="yyyy">
+                <input type="text" class="payerinfo" placeholder="CVV">
+            </div>
+            <button class="paybutton">Checkout!</button>
+            <span class="close">X</span>
+    </div>
+    <script src="E-Com.js"></script>
+</body>
+</html>
